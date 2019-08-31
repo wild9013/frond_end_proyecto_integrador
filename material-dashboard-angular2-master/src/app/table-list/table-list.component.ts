@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PRODUCCIONES} from '../mock-producciones';
 
 @Component({
   selector: 'app-table-list',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table-list.component.css']
 })
 export class TableListComponent implements OnInit {
+
+  producciones = PRODUCCIONES;
 
   constructor() { }
 
