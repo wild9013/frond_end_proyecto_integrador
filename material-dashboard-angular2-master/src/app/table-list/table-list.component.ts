@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {PRODUCCIONES} from '../mock-producciones';
+import {Produccion} from '../produccion';
+import {ProduccionService} from '../produccion.service';
 
 @Component({
   selector: 'app-table-list',
@@ -8,11 +9,18 @@ import {PRODUCCIONES} from '../mock-producciones';
 })
 export class TableListComponent implements OnInit {
 
-  producciones = PRODUCCIONES;
+  producciones: Produccion[];
 
-  constructor() { }
+  constructor(private produccionService: ProduccionService) { }
 
   ngOnInit() {
+    this.getProducciones();
   }
+
+  getProducciones(): void {
+    this.produccionService.getProducciones()
+        .subscribe(producciones => this.producciones = producciones);
+  }
+
 
 }

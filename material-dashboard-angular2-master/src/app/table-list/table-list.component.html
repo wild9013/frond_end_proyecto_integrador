@@ -36,7 +36,8 @@
                                           {{produccion.resumen}}
                                       </td>
                                       <td>
-                                          {{produccion.fechaPublicacion}}
+                                          {{produccion.fechaPublicacion | date: 'dd/MM/yyyy'}}
+
                                       </td>
                                   </tr>
                               </tbody>
