@@ -3,8 +3,6 @@ import {ProduccionService} from './produccion.service';
 import { CollectionViewer, DataSource} from '@angular/cdk/collections';
 import {Produccion} from './produccion';
 import {catchError, finalize, tap} from 'rxjs/operators';
-import {MessageService} from './message.service';
-
 
 export class ProduccionDataSource extends DataSource<Produccion> {
     // add variables to hold the data and number of total records retrieved asynchronously
@@ -13,7 +11,9 @@ export class ProduccionDataSource extends DataSource<Produccion> {
 
     // to show the total number of records
     private countSubject = new BehaviorSubject<number>(0);
+    private loadingSubject = new BehaviorSubject<boolean>(false);
     public counter$ = this.countSubject.asObservable();
+    public loading$ = this.loadingSubject.asObservable();
 
     constructor(private produccionService: ProduccionService) {
         super();
@@ -21,10 +21,11 @@ export class ProduccionDataSource extends DataSource<Produccion> {
 
     loadProducciones(pageIndex: number, pageSize: number) {
         // use pipe operator to chain functions with Observable type
-        // @ts-ignore
+        this.loadingSubject.next(true);
         this.produccionService.getProducciones(pageIndex, pageSize)
             .pipe(
-                catchError(() => of([]))
+                catchError(() => of([])),
+                finalize(() => this.loadingSubject.next(false))
             )
             // subscribe method to receive Observable type data when it is ready
             .subscribe((result: any) => {
@@ -41,5 +42,6 @@ export class ProduccionDataSource extends DataSource<Produccion> {
     disconnect(collectionViewer: CollectionViewer): void {
         this.produccionesSubject.complete();
         this.countSubject.complete();
+        this.loadingSubject.complete();
     }
 }
