@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
@@ -23,11 +23,15 @@ export class ProduccionService {
       private messageService: MessageService) { }
 
   /** GET producciones from the server */
-  getProducciones(): Observable<Produccion[]> {
-      return this.http.get<Produccion[]>(this.apiUrl + "/producciones", httpOptions)
+  getProducciones(pageIndex: number= 1, pageSize: number): Observable<Produccion[]> {
+      return this.http.get<Produccion[]>(this.apiUrl + '/produccionesPagina', {
+          params: new HttpParams()
+              .set('pageIndex', pageIndex.toString())
+              .set('pageSize', pageSize.toString())
+          })
           .pipe(
-              tap(_ => this.log('producciones')),
-              catchError(this.handleError<Produccion[]>('getHeroes', []))
+              tap(_ => this.log('producciones pageSize:' + pageSize + ' pageIndex:' + pageIndex)),
+              catchError(this.handleError<Produccion[]>('getProducciones', []))
           );
   }
 

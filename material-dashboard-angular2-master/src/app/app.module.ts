@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /**import { HttpModule } from '@angular/http'; */
 import { RouterModule } from '@angular/router';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
@@ -36,6 +37,7 @@ import { MessagesComponent } from './messages/messages.component';
     RouterModule,
     AppRoutingModule,
     MatPaginatorModule,
+      MatSortModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     })

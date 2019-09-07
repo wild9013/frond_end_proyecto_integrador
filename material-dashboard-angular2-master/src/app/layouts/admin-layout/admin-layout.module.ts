@@ -13,26 +13,28 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
 import {
-  MatButtonModule,
-  MatInputModule,
-  MatRippleModule,
-  MatFormFieldModule,
-  MatTooltipModule,
-  MatSelectModule
-} from '@angular/material';
-@NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forChild(AdminLayoutRoutes),
-    FormsModule,
-    ReactiveFormsModule,
     MatButtonModule,
+    MatInputModule,
     MatRippleModule,
     MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
     MatTooltipModule,
-  ],
+    MatSelectModule, MatTableModule, MatPaginatorModule
+} from '@angular/material';
+@NgModule({
+    imports: [
+        CommonModule,
+        RouterModule.forChild(AdminLayoutRoutes),
+        FormsModule,
+        ReactiveFormsModule,
+        MatButtonModule,
+        MatRippleModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSelectModule,
+        MatTooltipModule,
+        MatTableModule,
+        MatPaginatorModule,
+    ],
   declarations: [
     DashboardComponent,
     UserProfileComponent,

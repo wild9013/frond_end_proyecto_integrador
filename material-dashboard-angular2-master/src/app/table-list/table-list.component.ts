@@ -1,26 +1,55 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import {Produccion} from '../produccion';
 import {ProduccionService} from '../produccion.service';
+import { MatPaginator, MatTableDataSource } from '@angular/material';
+import { MatSort } from '@angular/material';
+import {ProduccionDataSource} from '../ProduccionDataSource';
+import {tap} from 'rxjs/operators';
+import {MessageService} from '../message.service';
 
 @Component({
   selector: 'app-table-list',
   templateUrl: './table-list.component.html',
   styleUrls: ['./table-list.component.css']
 })
-export class TableListComponent implements OnInit {
+export class TableListComponent implements AfterViewInit, OnInit {
 
-  producciones: Produccion[];
+  produccion: Produccion;
+  public displayedColumns = ['produccionID', 'titulo', 'resumen', 'fechaPublicacion'];
+  public dataSource: ProduccionDataSource;
 
-  constructor(private produccionService: ProduccionService) { }
+  constructor(
+      private produccionService: ProduccionService,
+      private messageService: MessageService) { }
+
+  // @ts-ignore
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+
+  ngAfterViewInit() {
+
+    this.dataSource.counter$
+        .pipe(
+            tap((count) => {
+              this.paginator.length = count;
+            })
+        )
+        .subscribe();
+
+    // when paginator event is invoked, retrieve the related data
+    this.paginator.page
+        .pipe(
+            tap(() => this.dataSource.loadProducciones(this.paginator.pageIndex, this.paginator.pageSize)),
+        )
+        .subscribe();
+    this.messageService.add('TableListComponent: PI:' + this.paginator.pageIndex + ' PS' + this.paginator.pageSize);
+  }
 
   ngOnInit() {
-    this.getProducciones();
-  }
+    // set paginator page size
+    this.paginator.pageSize = 5;
 
-  getProducciones(): void {
-    this.produccionService.getProducciones()
-        .subscribe(producciones => this.producciones = producciones);
+    this.dataSource = new ProduccionDataSource(this.produccionService);
+    this.dataSource.loadProducciones(this.paginator.pageIndex, this.paginator.pageSize);
   }
-
 
 }
