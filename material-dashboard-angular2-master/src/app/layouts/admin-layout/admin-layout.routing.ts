@@ -7,7 +7,8 @@ import { TypographyComponent } from '../../typography/typography.component';
 import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
-import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { UpgradeComponent } from '../../upgrade/upgrade.component'
+import { AgregarusuariosComponent} from '../../agregarusuarios/agregarusuarios.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -19,7 +20,7 @@ export const AdminLayoutRoutes: Routes = [
     // path: '',
     // children: [ {
     //   path: 'userprofile',
-    //   component: UserProfileComponent
+    //   component: UserProfileComponentu
     // }]
     // }, {
     //   path: '',
@@ -34,6 +35,12 @@ export const AdminLayoutRoutes: Routes = [
     //         component: NotificationsComponent
     //     }]
     // }, {
+    //     path: '',
+    //     children: [ {
+    //         path: 'agregarusuarios',
+    //         component: AgregarusuariosComponent
+    //     }]
+    // },  {
     //     path: '',
     //     children: [ {
     //         path: 'maps',
@@ -60,4 +67,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
+    { path: 'agregarusuarios',   component: AgregarusuariosComponent },
 ];
