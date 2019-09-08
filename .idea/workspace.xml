@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a74b5c3e-9a35-46a8-99c1-ba289ba5bc85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.module.ts" afterDir="false" />
-    </list>
+    <list default="true" id="a74b5c3e-9a35-46a8-99c1-ba289ba5bc85" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.spec.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -90,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="139">
@@ -103,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -138,9 +135,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="63" />
-    <option name="y" value="61" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1296" />
     <option name="height" value="696" />
   </component>
@@ -226,7 +223,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/angular6_firestore-master/angular6_firestore-master" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/frond_end_proyecto_integrador-master/frond_end_proyecto_integrador-master/material-dashboard-angular2-master" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -284,15 +281,15 @@
       <workItem from="1567887962737" duration="271000" />
       <workItem from="1567888632095" duration="1671000" />
       <workItem from="1567900475229" duration="814000" />
-      <workItem from="1567901777950" duration="12649000" />
+      <workItem from="1567901777950" duration="13333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19815000" />
+    <option name="totallyTimeSpent" value="20499000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
@@ -484,20 +481,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -515,6 +502,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
