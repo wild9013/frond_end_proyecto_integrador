@@ -10,20 +10,20 @@
                   <div class="card-body">
                       <form>
                           <div class="row">
-                              <div class="col-md-10"> <mat-form-field class="example-full-width">
-                                    <input matInput placeholder="Titulo">
+                              <div class="col-md-10"> <mat-form-field class="example-full-width" >
+                                    <input matInput placeholder="Titulo" type="text" minlength="5" maxlength="100" required>
                                   </mat-form-field>
                               </div>
                               <div class="col-md-4">
                                   <mat-form-field class="example-full-width">
-                                    <input matInput placeholder="Tipo de produccion">
+                                    <input matInput placeholder="Tipo de produccion" required>
                                   </mat-form-field>
                               </div>
                           </div>
                           <div class="row">
                               <div class="col-md-6">
                                 <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="Autores" type="text">
+                                  <input matInput placeholder="Autores" type="text" required>
 
                                 </mat-form-field>
                               </div>
@@ -32,7 +32,7 @@
                           <div class="row">
                               <div class="col-md-4">
                                   <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="fecha">
+                                      <input matInput placeholder="fecha" type="date" required>
 
                                   </mat-form-field>
                               </div>
@@ -43,7 +43,7 @@
                               <div class="col-md-12">
                                 <label>RESUMEN</label>
                                 <mat-form-field class="example-full-width">
-                                   <textarea matInput placeholder="Realice una brebe descripcion de la publicacion"></textarea>
+                                   <textarea matInput placeholder="Realice una brebe descripcion de la publicacion" minlength="5" maxlength="1000" required>></textarea>
                                  </mat-form-field>
                                   <!-- <div class="form-group">
 
@@ -56,12 +56,14 @@
 
                               <div class="col-md-4">
                                   <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="palabras clave">
+                                      <input matInput placeholder="palabras clave" required>
                                   </mat-form-field>
                               </div>
 
                           </div>
-                          <button mat-raised-button type="submit" class="btn btn-danger pull-right">Update Profile</button>
+
+                          <button button mat-raised-button color="primary">
+                              <mat-icon>send</mat-icon>Enviar</button>
                           <div class="clearfix"></div>
                       </form>
                   </div>
