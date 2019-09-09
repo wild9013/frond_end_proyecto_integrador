@@ -18,7 +18,10 @@ import {
   MatInputModule,
   MatRippleModule,
   MatFormFieldModule,
+  MatTableModule,
   MatTooltipModule,
+  MatPaginatorModule,
+  MatProgressSpinnerModule,
   MatSelectModule, MatIconModule
 } from '@angular/material';
 @NgModule({
@@ -28,13 +31,17 @@ import {
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
+    MatInputModule,
     MatRippleModule,
     MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
     MatTooltipModule,
-    MatIconModule,
+    MatSelectModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatIconModule
   ],
+
   declarations: [
     DashboardComponent,
     UserProfileComponent,
