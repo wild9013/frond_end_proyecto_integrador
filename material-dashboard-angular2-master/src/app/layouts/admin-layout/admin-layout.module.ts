@@ -11,34 +11,41 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { AgregarusuariosComponent } from '../../agregarusuarios/agregarusuarios.component';
 
 import {
+  MatButtonModule,
+  MatInputModule,
+  MatRippleModule,
+  MatFormFieldModule,
+  MatTableModule,
+  MatTooltipModule,
+  MatPaginatorModule,
+  MatProgressSpinnerModule,
+  MatSelectModule, MatIconModule
+} from '@angular/material';
+@NgModule({
+  imports: [
+    CommonModule,
+    RouterModule.forChild(AdminLayoutRoutes),
+    FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatInputModule,
     MatRippleModule,
     MatFormFieldModule,
     MatTooltipModule,
-    MatSelectModule, MatTableModule, MatPaginatorModule, MatProgressSpinnerModule
-} from '@angular/material';
-@NgModule({
-    imports: [
-        CommonModule,
-        RouterModule.forChild(AdminLayoutRoutes),
-        FormsModule,
-        ReactiveFormsModule,
-        MatButtonModule,
-        MatRippleModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatSelectModule,
-        MatTooltipModule,
-        MatTableModule,
-        MatPaginatorModule,
-        MatProgressSpinnerModule,
-    ],
+    MatSelectModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatIconModule
+  ],
+
   declarations: [
     DashboardComponent,
     UserProfileComponent,
+      AgregarusuariosComponent,
     TableListComponent,
     TypographyComponent,
     IconsComponent,
