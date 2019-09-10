@@ -34,6 +34,13 @@ export class ProduccionService {
               catchError(this.handleError<Produccion[]>('getProducciones', []))
           );
   }
+  /** ADD PRODUCCION  */
+  addProduccion(produccion: Produccion): Observable<Produccion> {
+    return this.http.post<Produccion>(this.apiUrl, produccion, httpOptions).pipe(
+        tap((newProduccion: Produccion) => this.log(`added produccion, w/ id=${newProduccion.produccionID}`)),
+        catchError(this.handleError<Produccion>('addProduccion'))
+    );
+  }
 
   /** Log a ProduccionService message with the MessageService */
   private log(message: string) {

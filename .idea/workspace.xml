@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a74b5c3e-9a35-46a8-99c1-ba289ba5bc85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/material-dashboard-angular2-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/material-dashboard-angular2-master/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.routing.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,60 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/components/sidebar/sidebar.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.routing.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.component.spec.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -78,9 +32,75 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.spec.ts">
+        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/table-list/table-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="459">
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/table-list/table-list.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/ProduccionDataSource.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/produccion.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
               <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
@@ -90,21 +110,8 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
-              <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/produccion.ts">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -134,10 +141,12 @@
         <option value="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.ts" />
         <option value="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.css" />
         <option value="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.html" />
+        <option value="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/produccion.service.ts" />
+        <option value="$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
@@ -180,7 +189,7 @@
               <item name="material-dashboard-angular2-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="agregarusuarios" type="462c0819:PsiDirectoryNode" />
+              <item name="agregarproducciones" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="frond_end_proyecto_integrador" type="b2602c69:ProjectViewProjectNode" />
@@ -188,32 +197,7 @@
               <item name="material-dashboard-angular2-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frond_end_proyecto_integrador" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frond_end_proyecto_integrador" type="462c0819:PsiDirectoryNode" />
-              <item name="material-dashboard-angular2-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frond_end_proyecto_integrador" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frond_end_proyecto_integrador" type="462c0819:PsiDirectoryNode" />
-              <item name="material-dashboard-angular2-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frond_end_proyecto_integrador" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frond_end_proyecto_integrador" type="462c0819:PsiDirectoryNode" />
-              <item name="material-dashboard-angular2-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="user-profile" type="462c0819:PsiDirectoryNode" />
+              <item name="table-list" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -285,14 +269,15 @@
       <workItem from="1567900475229" duration="814000" />
       <workItem from="1567901777950" duration="13333000" />
       <workItem from="1567991513513" duration="696000" />
+      <workItem from="1568084143207" duration="496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21195000" />
+    <option name="totallyTimeSpent" value="23491000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
@@ -416,13 +401,6 @@
     <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/documentation/css/material-dashboard.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/table-list/table-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -441,29 +419,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        <state relative-caret-position="-748">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.routing.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="442">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1989" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/layouts/admin-layout/admin-layout.component.spec.ts">
@@ -475,6 +462,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/table-list/table-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/ProduccionDataSource.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/produccion.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/produccion.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/user-profile/user-profile.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -484,37 +521,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.css">
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/table-list/table-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="425">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
           <folding>
-            <element signature="e#0#73#0" expanded="true" />
+            <element signature="e#0#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarusuarios/agregarusuarios.component.ts">
+    <entry file="file://$PROJECT_DIR$/material-dashboard-angular2-master/src/app/agregarproducciones/agregarproducciones.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
         </state>
       </provider>
     </entry>

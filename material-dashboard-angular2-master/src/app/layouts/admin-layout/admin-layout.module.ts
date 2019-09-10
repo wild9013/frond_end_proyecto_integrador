@@ -11,7 +11,7 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
-import { AgregarusuariosComponent } from '../../agregarusuarios/agregarusuarios.component';
+import { AgregarproduccionesComponent } from '../../agregarproducciones/agregarproducciones.component';
 
 import {
   MatButtonModule,
@@ -45,7 +45,7 @@ import {
   declarations: [
     DashboardComponent,
     UserProfileComponent,
-      AgregarusuariosComponent,
+      AgregarproduccionesComponent,
     TableListComponent,
     TypographyComponent,
     IconsComponent,
