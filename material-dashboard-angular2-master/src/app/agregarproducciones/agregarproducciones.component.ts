@@ -6,10 +6,10 @@ import {FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-user-profile',
-  templateUrl: './agregarusuarios.component.html',
-  styleUrls: ['./agregarusuarios.component.css']
+  templateUrl: './agregarproducciones.component.html',
+  styleUrls: ['./agregarproducciones.component.css']
 })
-export class AgregarusuariosComponent implements OnInit {
+export class AgregarproduccionesComponent implements OnInit {
 
   constructor() { }
 

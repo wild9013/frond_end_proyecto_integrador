@@ -160,7 +160,7 @@ material-dashboard-angular
 │   │   └── user-profile
 │   │       ├── user-profile.component.css
 │   │       ├── user-profile.component.html
-│   │       ├── agregarusuarios.component.spec.ts
+│   │       ├── agregarproducciones.component.spec.ts
 │   │       └── user-profile.componentu.ts
 │   ├── assets
 │   │   ├── css
