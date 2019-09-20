@@ -14,33 +14,35 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { AgregarproduccionesComponent } from '../../agregarproducciones/agregarproducciones.component';
 
 import {
-  MatButtonModule,
-  MatInputModule,
-  MatRippleModule,
-  MatFormFieldModule,
-  MatTableModule,
-  MatTooltipModule,
-  MatPaginatorModule,
-  MatProgressSpinnerModule,
-  MatSelectModule, MatIconModule
-} from '@angular/material';
-@NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forChild(AdminLayoutRoutes),
-    FormsModule,
-    ReactiveFormsModule,
     MatButtonModule,
     MatInputModule,
     MatRippleModule,
     MatFormFieldModule,
-    MatTooltipModule,
-    MatSelectModule,
     MatTableModule,
+    MatTooltipModule,
     MatPaginatorModule,
     MatProgressSpinnerModule,
-    MatIconModule
-  ],
+    MatSelectModule, MatIconModule, MatDatepickerModule, MatExpansionModule
+} from '@angular/material';
+@NgModule({
+    imports: [
+        CommonModule,
+        RouterModule.forChild(AdminLayoutRoutes),
+        FormsModule,
+        ReactiveFormsModule,
+        MatButtonModule,
+        MatInputModule,
+        MatRippleModule,
+        MatFormFieldModule,
+        MatTooltipModule,
+        MatSelectModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatProgressSpinnerModule,
+        MatIconModule,
+        MatDatepickerModule,
+        MatExpansionModule
+    ],
 
   declarations: [
     DashboardComponent,
