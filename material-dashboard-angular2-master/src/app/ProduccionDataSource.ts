@@ -29,8 +29,9 @@ export class ProduccionDataSource extends DataSource<Produccion> {
             )
             // subscribe method to receive Observable type data when it is ready
             .subscribe((result: any) => {
-                    this.produccionesSubject.next(result.rows);
-                    this.countSubject.next(result.total);
+                    console.log(result);
+                    this.produccionesSubject.next(result);
+                    this.countSubject.next(result.length);
                 }
             );
     }

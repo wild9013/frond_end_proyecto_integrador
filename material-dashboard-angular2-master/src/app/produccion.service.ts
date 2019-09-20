@@ -24,10 +24,10 @@ export class ProduccionService {
 
   /** GET producciones from the server */
   getProducciones(pageIndex: number= 1, pageSize: number): Observable<Produccion[]> {
-      return this.http.get<Produccion[]>(this.apiUrl + '/produccionesPagina', {
+      return this.http.get<Produccion[]>(this.apiUrl, {
           params: new HttpParams()
-              .set('pageIndex', pageIndex.toString())
-              .set('pageSize', pageSize.toString())
+              .set('page', pageIndex.toString())
+              .set('size', pageSize.toString())
           })
           .pipe(
               tap(_ => this.log('producciones pageSize:' + pageSize + ' pageIndex:' + pageIndex)),
