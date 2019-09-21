@@ -23,7 +23,7 @@ export class ProduccionService {
       private messageService: MessageService) { }
 
   /** GET producciones from the server */
-  getProducciones(pageIndex: number= 1, pageSize: number): Observable<Produccion[]> {
+  getProducciones(pageIndex: number= 0, pageSize: number): Observable<Produccion[]> {
       return this.http.get<Produccion[]>(this.apiUrl + '/produccionesPagina', {
           params: new HttpParams()
               .set('pageIndex', pageIndex.toString())
@@ -34,6 +34,73 @@ export class ProduccionService {
               catchError(this.handleError<Produccion[]>('getProducciones', []))
           );
   }
+
+  /** GET producciones from the server */
+  getProduccionesPagina(pageIndex: number= 0, pageSize: number, sortActive: string, sortDirection: string): Observable<Produccion[]> {
+    return this.http.get<Produccion[]>(this.apiUrl + '/produccionesPagina2', {
+      params: new HttpParams()
+          .set('pageIndex', pageIndex.toString())
+          .set('pageSize', pageSize.toString())
+          .set('sortActive', sortActive)
+          .set('sortDirection', sortDirection)
+    })
+        .pipe(
+            tap(_ => this.log('producciones pageSize:' + pageSize + ' pageIndex:' + pageIndex)),
+            catchError(this.handleError<Produccion[]>('getProducciones', []))
+        );
+  }
+
+  /** GET producciones from the server */
+  getProduccionesPaginaTitulo(pageIndex: number= 0, pageSize: number, sortActive: string,
+                              sortDirection: string, term: string): Observable<Produccion[]> {
+    return this.http.get<Produccion[]>(this.apiUrl + '/produccionesPaginaTitulo', {
+      params: new HttpParams()
+          .set('pageIndex', pageIndex.toString())
+          .set('pageSize', pageSize.toString())
+          .set('sortActive', sortActive)
+          .set('sortDirection', sortDirection)
+          .set('term', term)
+    })
+        .pipe(
+            tap(_ => this.log('producciones pageSize:' + pageSize + ' pageIndex:' + pageIndex)),
+            catchError(this.handleError<Produccion[]>('getProducciones', []))
+        );
+  }
+
+  /** GET producciones from the server */
+  getProduccionesPaginaResumen(pageIndex: number= 0, pageSize: number, sortActive: string,
+                              sortDirection: string, term: string): Observable<Produccion[]> {
+    return this.http.get<Produccion[]>(this.apiUrl + '/produccionesPaginaResumen', {
+      params: new HttpParams()
+          .set('pageIndex', pageIndex.toString())
+          .set('pageSize', pageSize.toString())
+          .set('sortActive', sortActive)
+          .set('sortDirection', sortDirection)
+          .set('term', term)
+    })
+        .pipe(
+            tap(_ => this.log('producciones pageSize:' + pageSize + ' pageIndex:' + pageIndex)),
+            catchError(this.handleError<Produccion[]>('getProducciones', []))
+        );
+  }
+
+  /** GET producciones from the server */
+  getProduccionesPaginaTipo(pageIndex: number= 0, pageSize: number, sortActive: string,
+                               sortDirection: string, term: string): Observable<Produccion[]> {
+    return this.http.get<Produccion[]>(this.apiUrl + '/produccionesPaginaTipo', {
+      params: new HttpParams()
+          .set('pageIndex', pageIndex.toString())
+          .set('pageSize', pageSize.toString())
+          .set('sortActive', sortActive)
+          .set('sortDirection', sortDirection)
+          .set('term', term)
+    })
+        .pipe(
+            tap(_ => this.log('producciones pageSize:' + pageSize + ' pageIndex:' + pageIndex)),
+            catchError(this.handleError<Produccion[]>('getProducciones', []))
+        );
+  }
+
   /** ADD PRODUCCION  */
   addProduccion(produccion: Produccion): Observable<Produccion> {
     return this.http.post<Produccion>(this.apiUrl, produccion, httpOptions).pipe(

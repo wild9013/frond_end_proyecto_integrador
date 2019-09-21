@@ -8,23 +8,54 @@
                         <p class="card-category"> Listado de las producciones académicas disponibles.</p>
                     </div>
                     <div class="card-body">
+
                         <div class="table-responsive">
-                            <mat-table [dataSource]="dataSource" class="table">
-                                <ng-container matColumnDef="produccionID">
-                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> ID </th>
-                                    <td mat-cell *matCellDef="let produccion" class="text-primary"> {{produccion.produccionID}} </td>
-                                </ng-container>
+
+                            <mat-table [dataSource]="dataSource" class="mat-elevation-z8"
+                                       matSort matSortActive="titulo" matSortDisableClear matSortDirection="desc">
                                 <ng-container matColumnDef="titulo">
-                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> Titulo </th>
+                                    <th mat-header-cell *matHeaderCellDef class=" text-primary">
+                                        TITULO
+                                        <mat-form-field>
+                                            <input matInput [formControl]="tituloInput" (keyup)="applyFilterTitulo($event.target.value)">
+                                            <mat-icon matPrefix>search</mat-icon>
+                                        </mat-form-field>
+                                    </th>
                                     <td mat-cell *matCellDef="let produccion"> {{produccion.titulo}} </td>
                                 </ng-container>
                                 <ng-container matColumnDef="resumen">
-                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> Resumen </th>
+                                    <th mat-header-cell *matHeaderCellDef class=" text-primary">
+                                        <!-- Resumen -->
+                                        RESUMEN
+                                        <mat-form-field>
+                                            <input matInput [formControl]="resumenInput" (keyup)="applyFilterResumen($event.target.value)">
+                                            <mat-icon matPrefix>search</mat-icon>
+                                        </mat-form-field>
+                                    </th>
                                     <td mat-cell *matCellDef="let produccion"> {{produccion.resumen}} </td>
                                 </ng-container>
                                 <ng-container matColumnDef="fechaPublicacion">
-                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> Fecha Publicación </th>
+                                    <th mat-header-cell *matHeaderCellDef class=" text-primary">
+                                        FECHA PUBLICACION
+                                    </th>
                                     <td mat-cell *matCellDef="let produccion"> {{produccion.fechaPublicacion | date: 'dd/MM/yyyy'}} </td>
+                                </ng-container>
+                                <ng-container matColumnDef="tipoProduccion">
+                                    <th mat-header-cell *matHeaderCellDef class=" text-primary">
+                                        <!-- Tipo Produccion -->
+                                        TIPO PRODUCCION
+                                        <!--
+                                        <mat-form-field>
+                                            <mat-label> </mat-label>
+                                            <mat-select [formControl]="tipoSelect" (selectionChange)="applyFilterTipoProduccion($event.value)">
+                                                <mat-option> </mat-option>
+                                                <mat-option value="ArticuloInvestigacion">Articulo de investigacion</mat-option>
+                                                <mat-option value="TrabajoGrado">Trabajo de Grado</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                         -->
+                                    </th>
+                                    <td mat-cell *matCellDef="let produccion"> {{produccion.tipoProduccion.descripcion}} </td>
                                 </ng-container>
 
                                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -34,6 +65,7 @@
                                 <mat-spinner></mat-spinner>
                             </div>
                             <mat-paginator [pageSizeOptions]="[2, 5, 10, 20]"></mat-paginator>
+
                         </div>
                     </div>
                 </div>

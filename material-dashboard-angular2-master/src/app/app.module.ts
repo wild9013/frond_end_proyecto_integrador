@@ -3,8 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /**import { HttpModule } from '@angular/http'; */
 import { RouterModule } from '@angular/router';
-import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import {MatTableModule} from '@angular/material/table';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
@@ -31,13 +34,15 @@ import { MessagesComponent } from './messages/messages.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-/**HttpModule, */
     HttpClientModule,
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
     MatPaginatorModule,
-      MatSortModule,
+    MatSortModule,
+      MatTableModule,
+      MatSnackBarModule,
+      MatExpansionModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     })
