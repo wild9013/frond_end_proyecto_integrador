@@ -25,6 +25,7 @@ export class AgregarproduccionesComponent implements OnInit {
 
 
     onClickMe(produccion: Produccion) {
+      console.log("Im here")
         this.produccionService.addProduccion(produccion)
     }
   ngOnInit() {

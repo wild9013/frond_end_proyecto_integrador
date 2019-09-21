@@ -102,11 +102,13 @@ export class ProduccionService {
   }
 
   /** ADD PRODUCCION  */
-  addProduccion(produccion: Produccion): Observable<Produccion> {
-    return this.http.post<Produccion>(this.apiUrl, produccion, httpOptions).pipe(
+  addProduccion(produccion: Produccion) {
+    console.log(produccion)
+    return this.http.post<Produccion>(this.apiUrl+"/", produccion, httpOptions)/*.pipe(
         tap((newProduccion: Produccion) => this.log(`added produccion, w/ id=${newProduccion.produccionID}`)),
-        catchError(this.handleError<Produccion>('addProduccion'))
-    );
+        catchError(this.handleError<Produccion>('addProduccion')),
+        
+    )*/.subscribe();
   }
 
   /** Log a ProduccionService message with the MessageService */
