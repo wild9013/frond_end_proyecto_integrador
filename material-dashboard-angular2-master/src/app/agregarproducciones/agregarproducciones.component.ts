@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, NgForm, Validators} from '@angular/forms';
 import {Produccion} from '../produccion';
 import {ClickMeComponent} from './click-me.component';
-
+import {ProduccionService} from '../produccion.service';
 
 @Component({
   selector: 'app-user-profile',
@@ -14,17 +14,18 @@ import {ClickMeComponent} from './click-me.component';
 })
 export class AgregarproduccionesComponent implements OnInit {
     // creacion de variable contact
+
   Produccionuno = new Produccion();
     private emailResponse;
     private truefalse = false;
    public active = true;
     public submitted = false;
-  constructor() { }
+  constructor(private produccionService: ProduccionService,) {
+        }
 
-  agregado = '';
 
-    onClickMe() {
-        this.agregado = 'guardada';
+    onClickMe(produccion: Produccion) {
+        this.produccionService.addProduccion(produccion)
     }
   ngOnInit() {
   }
