@@ -11,38 +11,52 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { AgregarproduccionesComponent } from '../../agregarproducciones/agregarproducciones.component';
 
 import {
-  MatButtonModule,
-  MatInputModule,
-  MatRippleModule,
-  MatFormFieldModule,
-  MatTooltipModule,
-  MatSelectModule
-} from '@angular/material';
-@NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forChild(AdminLayoutRoutes),
-    FormsModule,
-    ReactiveFormsModule,
     MatButtonModule,
+    MatInputModule,
     MatRippleModule,
     MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
+    MatTableModule,
     MatTooltipModule,
-  ],
-  declarations: [
-    DashboardComponent,
-    UserProfileComponent,
-    TableListComponent,
-    TypographyComponent,
-    IconsComponent,
-    MapsComponent,
-    NotificationsComponent,
-    UpgradeComponent,
-  ]
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatSelectModule, MatIconModule, MatDatepickerModule, MatExpansionModule
+} from '@angular/material';
+import {ClickMeComponent} from "../../agregarproducciones/click-me.component";
+@NgModule({
+    imports: [
+        CommonModule,
+        RouterModule.forChild(AdminLayoutRoutes),
+        FormsModule,
+        ReactiveFormsModule,
+        MatButtonModule,
+        MatInputModule,
+        MatRippleModule,
+        MatFormFieldModule,
+        MatTooltipModule,
+        MatSelectModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatProgressSpinnerModule,
+        MatIconModule,
+        MatDatepickerModule,
+        MatExpansionModule
+    ],
+
+    declarations: [
+        DashboardComponent,
+        UserProfileComponent,
+        AgregarproduccionesComponent,
+        TableListComponent,
+        TypographyComponent,
+        IconsComponent,
+        MapsComponent,
+        NotificationsComponent,
+        UpgradeComponent,
+        ClickMeComponent,
+    ]
 })
 
 export class AdminLayoutModule {}
