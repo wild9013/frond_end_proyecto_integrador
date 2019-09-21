@@ -12,6 +12,10 @@ import {MessageService} from '../message.service';
   templateUrl: './table-list.component.html',
   styleUrls: ['./table-list.component.css']
 })
+
+
+
+
 export class TableListComponent implements AfterViewInit, OnInit {
 
   produccion: Produccion;
