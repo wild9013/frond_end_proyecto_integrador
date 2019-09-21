@@ -14,6 +14,10 @@ import {FormControl} from '@angular/forms';
   templateUrl: './table-list.component.html',
   styleUrls: ['./table-list.component.css']
 })
+
+
+
+
 export class TableListComponent implements AfterViewInit, OnInit {
 
   produccion: Produccion;

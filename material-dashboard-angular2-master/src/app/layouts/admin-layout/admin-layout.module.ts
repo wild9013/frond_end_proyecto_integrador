@@ -24,6 +24,7 @@ import {
     MatProgressSpinnerModule,
     MatSelectModule, MatIconModule, MatDatepickerModule, MatExpansionModule
 } from '@angular/material';
+import {ClickMeComponent} from "../../agregarproducciones/click-me.component";
 @NgModule({
     imports: [
         CommonModule,
@@ -44,17 +45,18 @@ import {
         MatExpansionModule
     ],
 
-  declarations: [
-    DashboardComponent,
-    UserProfileComponent,
-      AgregarproduccionesComponent,
-    TableListComponent,
-    TypographyComponent,
-    IconsComponent,
-    MapsComponent,
-    NotificationsComponent,
-    UpgradeComponent,
-  ]
+    declarations: [
+        DashboardComponent,
+        UserProfileComponent,
+        AgregarproduccionesComponent,
+        TableListComponent,
+        TypographyComponent,
+        IconsComponent,
+        MapsComponent,
+        NotificationsComponent,
+        UpgradeComponent,
+        ClickMeComponent,
+    ]
 })
 
 export class AdminLayoutModule {}

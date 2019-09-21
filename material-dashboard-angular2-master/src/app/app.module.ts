@@ -28,11 +28,13 @@ import {
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { MessagesComponent } from './messages/messages.component';
+import {BrowserModule} from "@angular/platform-browser";
 
 @NgModule({
   imports: [
     BrowserAnimationsModule,
     FormsModule,
+      BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
     ComponentsModule,

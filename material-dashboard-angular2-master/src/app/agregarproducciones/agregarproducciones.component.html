@@ -1,5 +1,5 @@
 <div class="main-content">
-  <div class="container-fluid">
+   <div class="container-fluid">
       <div class="row">
           <div class="col-md-8">
               <div class="card">
@@ -8,23 +8,22 @@
                       <p class="card-category">agrega la información correspondiente</p>
                   </div>
                   <div class="card-body">
-                      <form>
+                      <form  #Produccion="ngForm">
                           <div class="row">
                               <div class="col-md-10"> <mat-form-field class="example-full-width" >
-                                    <input matInput placeholder="Titulo" type="text" minlength="5" maxlength="100" required>
+                                    <input matInput placeholder="Titulo" type="text" minlength="5" maxlength="100" [(ngModel)]="Produccionuno.titulo" name="Titulo" required>
                                   </mat-form-field>
                               </div>
                               <div class="col-md-4">
                                   <mat-form-field class="example-full-width">
-                                    <input matInput placeholder="Tipo de produccion" required>
+                                    <input matInput placeholder="Tipo de produccion" >
                                   </mat-form-field>
                               </div>
                           </div>
                           <div class="row">
                               <div class="col-md-6">
                                 <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="Autores" type="text" required>
-
+                                  <input matInput placeholder="Autores" type="text">
                                 </mat-form-field>
                               </div>
                           </div>
@@ -32,21 +31,18 @@
                           <div class="row">
                               <div class="col-md-4">
                                   <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="fecha" type="date" required>
-
+                                      <input matInput placeholder="fecha" type="date" [(ngModel)]="Produccionuno.fechaPublicacion"  name="Fecha" required >
                                   </mat-form-field>
                               </div>
-
                           </div>
 
                           <div class="row">
                               <div class="col-md-12">
                                 <label>RESUMEN</label>
-                                <mat-form-field class="example-full-width">
-                                   <textarea matInput placeholder="Realice una brebe descripcion de la publicacion" minlength="5" maxlength="1000" required>></textarea>
-                                 </mat-form-field>
+                                   <mat-form-field class="example-full-width">
+                                   <textarea matInput placeholder="Realice una brebe descripcion de la publicacion" minlength="5" maxlength="1000" [(ngModel)]="Produccionuno.resumen" name="descripcion" required>></textarea>
+                                   </mat-form-field>
                                   <!-- <div class="form-group">
-
                                       <div class="form-group">
                                           <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
                                           <textarea class="form-control" rows="5"></textarea>
@@ -56,16 +52,19 @@
 
                               <div class="col-md-4">
                                   <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="palabras clave" required>
+                                      <input matInput placeholder="palabras clave">
                                   </mat-form-field>
                               </div>
 
                           </div>
 
-                          <button button mat-raised-button color="primary">
-                              <mat-icon>send</mat-icon>Enviar</button>
-                          <div class="clearfix"></div>
+                          <button (click)="onClickMe()" [disabled]="!Produccion.form.valid" button mat-raised-button color="primary">
+                              <mat-icon>send</mat-icon> Enviar</button>  <div class="clearfix"></div>
+
+
+
                       </form>
+
                   </div>
               </div>
           </div>
@@ -88,4 +87,12 @@
           </div>
       </div>
   </div>
+
+    <div class="container-fluid">
+        <app-table-list></app-table-list>
+    </div>
+
+
+
+
 </div>

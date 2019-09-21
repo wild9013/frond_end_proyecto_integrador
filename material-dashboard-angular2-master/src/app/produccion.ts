@@ -7,3 +7,5 @@ export class Produccion {
   fechaPublicacion: Date;
   tipoProduccion: TipoProduccion;
 }
+
+
