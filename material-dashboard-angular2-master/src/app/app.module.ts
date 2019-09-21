@@ -12,6 +12,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
+//Translation
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient} from '@angular/common/http';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { TableListComponent } from './table-list/table-list.component';
@@ -25,6 +30,7 @@ import {
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { MessagesComponent } from './messages/messages.component';
+import { TranslationComponent } from './translation/translation.component';
 
 @NgModule({
   imports: [
@@ -40,12 +46,22 @@ import { MessagesComponent } from './messages/messages.component';
       MatSortModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
+    }),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => {
+          return new TranslateHttpLoader(http);
+        },
+        deps: [ HttpClient ]
+      }
     })
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
     MessagesComponent,
+    TranslationComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

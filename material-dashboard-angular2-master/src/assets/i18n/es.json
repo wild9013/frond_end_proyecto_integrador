@@ -1,0 +1,39 @@
+{
+    "HOME.TITLE" : "HOLA USUARIO",
+
+    "principal.texto" : "Lista de frutas",
+
+    "producciones.text" : "Producciones",
+
+    "usuarios.text" : "Usuarios",
+
+    "agregarUsuarios.text" : "Agregar Usuarios",
+    
+    "produccionesAcademicas.text" : "PRODUCCIONES ACADÉMICAS",
+
+    "listadoProducciones.text" : "Listado de las producciones académicas disponibles.",
+
+    "id.text" : "ID Titulo Resumen Fecha Publicación",
+
+    "titulo.text" : "Título",
+
+    "tipoProduccion.text" : "Tipo de produccion",
+
+    "autores.text" : "Autores",
+
+    "fecha.text" : "fecha",
+
+    "resumen.text" : "Resumen",
+
+    "clave.text" : "palabras clave",
+
+    "enviar.text" : "Enviar",
+
+    "autoresNuevos.text" : "autores nuevos",
+
+    "procedimiento.text" : "procedimiento",
+
+    "publicacionesProtegidas.text" : "Las publicaciones estan protegidas por derecho de autor, todos los derechos reservados."
+    
+
+  }

@@ -1,7 +1,8 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, Input } from '@angular/core';
 import { ROUTES } from '../sidebar/sidebar.component';
 import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 import { Router } from '@angular/router';
+import { AppComponent } from '../../app.component'
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +10,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+    /*@Input()activeLang: String;
+    @Input()translate: String;*/
+    public activeLang = 'es';
     private listTitles: any[];
     location: Location;
       mobile_menu_visible: any = 0;
@@ -122,4 +126,9 @@ export class NavbarComponent implements OnInit {
       }
       return 'Dashboard';
     }
+
+    public cambiarLenguaje(lang) {
+        this.activeLang = lang;
+        this.translate.use(lang);
+      }
 }
