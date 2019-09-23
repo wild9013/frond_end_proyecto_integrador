@@ -24,6 +24,7 @@ import {
   MatProgressSpinnerModule,
   MatSelectModule, MatIconModule
 } from '@angular/material';
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   imports: [
     CommonModule,
@@ -39,7 +40,8 @@ import {
     MatTableModule,
     MatPaginatorModule,
     MatProgressSpinnerModule,
-    MatIconModule
+    MatIconModule,
+    TranslateModule
   ],
 
   declarations: [

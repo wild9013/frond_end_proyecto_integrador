@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
 
 
 
@@ -11,7 +12,7 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class AgregarproduccionesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
   ngOnInit() {
   }
