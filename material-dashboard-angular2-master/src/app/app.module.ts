@@ -8,6 +8,7 @@ import { MatSortModule } from '@angular/material/sort';
 import {MatTableModule} from '@angular/material/table';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatSelectModule} from '@angular/material/select';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
@@ -45,6 +46,7 @@ import {BrowserModule} from "@angular/platform-browser";
       MatTableModule,
       MatSnackBarModule,
       MatExpansionModule,
+      MatSelectModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     })
