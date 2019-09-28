@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import {FormControl, NgForm, Validators} from '@angular/forms';
 import {Produccion} from '../produccion';
 import {TipoProduccion} from '../tipoProduccion';
@@ -6,6 +7,7 @@ import {ClickMeComponent} from './click-me.component';
 import {ProduccionService} from '../produccion.service';
 import {TproduccionService} from '../tproduccion.service';
 import {Observable, of} from 'rxjs';
+
 
 @Component({
   selector: 'app-user-profile',
@@ -15,13 +17,14 @@ import {Observable, of} from 'rxjs';
 
 export class AgregarproduccionesComponent implements OnInit {
 
+
   Produccionuno = new Produccion();
   Tproducciones: TipoProduccion[];
     private emailResponse;
     private truefalse = false;
    public active = true;
     public submitted = false;
-  constructor(private produccionService: ProduccionService, private tproduccionService: TproduccionService) {}
+  constructor(private produccionService: ProduccionService, private tproduccionService: TproduccionService,private translate: TranslateService) {}
 
     ngOnInit() {
         this.tproduccionService
