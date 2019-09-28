@@ -4,26 +4,26 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header card-header-danger">
-                        <h4 class="card-title ">{{'produccionesAcademicas.text'|translate}}</h4>
-                        <p class="card-category"> Listado de las producciones académicas disponibles.</p>
+                        <h4 class="card-title ">{{'product.list.title' | translate}}</h4>
+                        <p class="card-category">{{'product.list.subTitle' | translate}}</p>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <mat-table [dataSource]="dataSource" class="table">
                                 <ng-container matColumnDef="produccionID">
-                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> ID </th>
+                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> {{'product.list.table.id' | translate}} </th>
                                     <td mat-cell *matCellDef="let produccion" class="text-primary"> {{produccion.produccionID}} </td>
                                 </ng-container>
                                 <ng-container matColumnDef="titulo">
-                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> Titulo </th>
+                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> {{'product.list.table.title' | translate}} </th>
                                     <td mat-cell *matCellDef="let produccion"> {{produccion.titulo}} </td>
                                 </ng-container>
                                 <ng-container matColumnDef="resumen">
-                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> Resumen </th>
+                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> {{'product.list.table.summary' | translate}} </th>
                                     <td mat-cell *matCellDef="let produccion"> {{produccion.resumen}} </td>
                                 </ng-container>
                                 <ng-container matColumnDef="fechaPublicacion">
-                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> Fecha Publicación </th>
+                                    <th mat-header-cell *matHeaderCellDef class=" text-primary"> {{'product.list.table.publicationDate' | translate}} </th>
                                     <td mat-cell *matCellDef="let produccion"> {{produccion.fechaPublicacion | date: 'dd/MM/yyyy'}} </td>
                                 </ng-container>
 

@@ -1,39 +1,59 @@
 {
-    "HOME.TITLE" : "HELLO USER",
+  "sidebar.menu.product": "Products",
+  "sidebar.menu.user": "User",
+  "sidebar.menu.addProduct": "Add product",
 
-    "principal.texto" : "Lista de frutas",
+  "navbar.stats": "Stats",
+  "navbar.actions": "Actions",
+  "navbar.account": "Account",
 
-    "producciones.text" : "Productions",
+  "product.list.title": "Products",
+  "product.list.subTitle": "List of available academic productions.",
+  "product.list.table.id": "ID",
+  "product.list.table.title": "Title",
+  "product.list.table.summary": "Summary",
+  "product.list.table.publicationDate": "Publication Date",
+  "product.add.title": "Edit the list of productions",
+  "product.add.subTitle": "Add the corresponding information",
 
-    "usuarios.text" : "Users",
+  "user.edit.title": "Edit Profile",
+  "user.edit.subTitle": "Completes your profile",
+  "user.edit.aboutMe": "About Me",
+  "user.edit.updateProfile": "Update Profile",
 
-    "agregarUsuarios.text" : "Add Users",
-    
-    "produccionesAcademicas.text" : "ACADEMIC PRODUCTIONS",
+  "paginator.itemsPerPage": "Items per page",
+  "paginator.nextPage": "Next page",
+  "paginator.previousPage": "Previous page",
+  "paginator.firstPage": "First page",
+  "paginator.lastPage": "Last page",
+  "paginator.rangeLabel": "of",
 
-    "listadoProducciones.text" : "List of available academic productions.",
+  "footer.info": "GROUP 3 - ACADEMIC PRODUCTIONS",
 
-    "id.text" : "ID Title Summary Date Publication",
+  "placeholder.search": "Search...",
+  "placeholder.company": "Company",
+  "placeholder.username": "Username",
+  "placeholder.emailAddress": "Email address",
+  "placeholder.firstName": "First Name",
+  "placeholder.lastName": "Last Name",
+  "placeholder.address": "Address",
+  "placeholder.city": "City",
+  "placeholder.country": "Country",
+  "placeholder.postalCode": "Postal Code",
+  "placeholder.aboutMe": "About Me",
+  "placeholder.title": "Title",
+  "placeholder.productType": "Type of production",
+  "placeholder.authors": "Authors",
+  "placeholder.date": "date",
+  "placeholder.summary": "SUMMARY",
+  "placeholder.briefDescription": "Make a brief description of the publication",
+  "placeholder.keywords": "keywords",
 
-    "titulo.text" : "Title",
+  "attribute.disabled": "(disabled)",
 
-    "tipoProduccion.text" : "Type of production",
+  "action.follow": "Follow",
+  "action.send": "Send",
 
-    "autores.text" : "Authors",
-
-    "fecha.text" : "date",
-
-    "resumen.text" : "Summary",
-
-    "clave.text" : "keywords",
-
-    "enviar.text" : "Send",
-
-    "autoresNuevos.text" : "new authors",
-
-    "procedimiento.text" : "procedure",
-
-    "publicacionesProtegidas.text" : "Publications are protected by copyright, all rights reserved."
-    
-
-  }
+  "validation.required": "You must enter a value",
+  "validation.email": "Not a valid email"
+}

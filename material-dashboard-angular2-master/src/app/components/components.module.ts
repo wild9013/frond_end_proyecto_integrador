@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslationComponent } from './translation/translation.component'
 
 @NgModule({
   imports: [
@@ -16,12 +18,14 @@ import { TranslateModule } from '@ngx-translate/core';
   declarations: [
     FooterComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    TranslationComponent
   ],
   exports: [
     FooterComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    TranslationComponent
   ]
 })
 export class ComponentsModule { }

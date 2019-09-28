@@ -1,39 +1,59 @@
 {
-    "HOME.TITLE" : "HOLA USUARIO",
+  "sidebar.menu.product": "Producciones",
+  "sidebar.menu.user": "Usuarios",
+  "sidebar.menu.addProduct": "Agregar Producciones",
 
-    "principal.texto" : "Lista de frutas",
+  "navbar.stats": "Estadísticas",
+  "navbar.actions": "Comportamiento",
+  "navbar.account": "Cuenta",
 
-    "producciones.text" : "Producciones",
+  "product.list.title": "Producciones",
+  "product.list.subTitle": "Listado de las producciones académicas disponibles.",
+  "product.list.table.id": "ID",
+  "product.list.table.title": "Titulo",
+  "product.list.table.summary": "Resumen",
+  "product.list.table.publicationDate": "Fecha Publicación",
+  "product.add.title": "Editar la lista de producciones",
+  "product.add.subTitle": "Agrega la información correspondiente",
 
-    "usuarios.text" : "Usuarios",
+  "user.edit.title": "Editar perfil",
+  "user.edit.subTitle": "Completa tu perfil",
+  "user.edit.aboutMe": "Sobre mi",
+  "user.edit.updateProfile": "Actualización del perfil",
 
-    "agregarUsuarios.text" : "Agregar Usuarios",
-    
-    "produccionesAcademicas.text" : "PRODUCCIONES ACADÉMICAS",
+  "paginator.itemsPerPage": "Elementos por página",
+  "paginator.nextPage": "Next page",
+  "paginator.previousPage": "Siguiente página",
+  "paginator.firstPage": "Primera página",
+  "paginator.lastPage": "Última página",
+  "paginator.rangeLabel": "de",
 
-    "listadoProducciones.text" : "Listado de las producciones académicas disponibles.",
+  "footer.info": "GRUPO 3 - PRODUCCIONES ACADÉMICAS",
 
-    "id.text" : "ID Titulo Resumen Fecha Publicación",
+  "placeholder.search": "Buscar...",
+  "placeholder.company": "Empresa",
+  "placeholder.username": "Nombre de usuario",
+  "placeholder.emailAddress": "Email",
+  "placeholder.firstName": "Primer Nombre",
+  "placeholder.lastName": "Apellido",
+  "placeholder.address": "Dirección",
+  "placeholder.city": "Ciudad",
+  "placeholder.country": "País",
+  "placeholder.postalCode": "Código postal",
+  "placeholder.aboutMe": "Sobre mi",
+  "placeholder.title": "Titulo",
+  "placeholder.productType": "Tipo de produccion",
+  "placeholder.authors": "Autores",
+  "placeholder.date": "fecha",
+  "placeholder.summary": "RESUMEN",
+  "placeholder.briefDescription": "Realice una brebe descripcion de la publicacion",
+  "placeholder.keywords": "palabras clave",
 
-    "titulo.text" : "Título",
+  "attribute.disabled": "(inhabilitado)",
 
-    "tipoProduccion.text" : "Tipo de produccion",
+  "action.follow": "Seguir",
+  "action.send": "Enviar",
 
-    "autores.text" : "Autores",
-
-    "fecha.text" : "fecha",
-
-    "resumen.text" : "Resumen",
-
-    "clave.text" : "palabras clave",
-
-    "enviar.text" : "Enviar",
-
-    "autoresNuevos.text" : "autores nuevos",
-
-    "procedimiento.text" : "procedimiento",
-
-    "publicacionesProtegidas.text" : "Las publicaciones estan protegidas por derecho de autor, todos los derechos reservados."
-    
-
-  }
+  "validation.required": "Debes ingresar un valor",
+  "validation.email": "No es un correo valido"
+}

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /**import { HttpModule } from '@angular/http'; */
 import { RouterModule } from '@angular/router';
-import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatPaginatorModule, MatPaginatorIntl } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 
 import { AppRoutingModule } from './app.routing';
@@ -13,9 +13,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 //Translation
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import {
+  TranslateLoader,
+  TranslateModule,
+  MissingTranslationHandler,
+  TranslateService,
+  TranslateParser
+} from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
+
+import { MyMissingTranslationHandler, MyMatPaginatorIntl } from './handler';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
@@ -30,20 +38,26 @@ import {
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { MessagesComponent } from './messages/messages.component';
-import { TranslationComponent } from './translation/translation.component';
+
+export function createCustomMatPaginatorIntl(
+  translateService: TranslateService,
+  translateParser: TranslateParser
+) {
+  return new MyMatPaginatorIntl(translateService, translateParser);
+}
 
 @NgModule({
   imports: [
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-/**HttpModule, */
+    /**HttpModule, */
     HttpClientModule,
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
     MatPaginatorModule,
-      MatSortModule,
+    MatSortModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     }),
@@ -52,22 +66,26 @@ import { TranslationComponent } from './translation/translation.component';
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [ HttpClient ]
-      }
+        deps: [HttpClient]
+      },
+      missingTranslationHandler: { provide: MissingTranslationHandler, useClass: MyMissingTranslationHandler }
     })
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    MessagesComponent,
-    TranslationComponent,
+    MessagesComponent
   ],
-  providers: [],
+  providers: [{
+    provide: MatPaginatorIntl,
+    deps: [TranslateService, TranslateParser],
+    useFactory: createCustomMatPaginatorIntl
+  }],
   bootstrap: [AppComponent],
-  
+
 })
 export class AppModule { }
 
-export function HttpLoaderFactory(http: HttpClient){
+export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
