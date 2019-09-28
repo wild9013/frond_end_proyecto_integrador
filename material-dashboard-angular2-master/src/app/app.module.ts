@@ -5,6 +5,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MatPaginatorModule, MatPaginatorIntl } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import {MatTableModule} from '@angular/material/table';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatSelectModule} from '@angular/material/select';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
@@ -38,6 +42,7 @@ import {
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { MessagesComponent } from './messages/messages.component';
+import {BrowserModule} from "@angular/platform-browser";
 
 export function createCustomMatPaginatorIntl(
   translateService: TranslateService,
@@ -50,14 +55,19 @@ export function createCustomMatPaginatorIntl(
   imports: [
     BrowserAnimationsModule,
     FormsModule,
+      BrowserModule,
     ReactiveFormsModule,
-    /**HttpModule, */
     HttpClientModule,
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
     MatPaginatorModule,
     MatSortModule,
+    MatTableModule,
+    MatSnackBarModule,
+    MatExpansionModule,
+    MatSelectModule,
+
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     }),
