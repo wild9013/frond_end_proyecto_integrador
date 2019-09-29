@@ -4,22 +4,38 @@
           <div class="col-md-8">
               <div class="card">
                   <div class="card-header card-header-danger">
-                      <h4 class="card-title">Editar la lista de producciones</h4>
-                      <p class="card-category">agrega la información correspondiente</p>
+                      <h4 class="card-title">{{'product.add.title' | translate}}</h4>
+                      <p class="card-category">{{'product.add.subTitle' | translate}}</p>
                   </div>
                   <div class="card-body">
                       <form  #Produccion="ngForm">
                           <div class="row">
-                              <div class="col-md-10"> <mat-form-field class="example-full-width" >
-                                    <input matInput placeholder="Titulo" type="text" minlength="5" maxlength="100" [(ngModel)]="Produccionuno.titulo" name="Titulo" required>
+                              <div class="col-md-10">
+                                  <mat-form-field class="example-full-width" >
+                                    <input matInput placeholder="{{'placeholder.title' | translate}}" type="text" minlength="5" maxlength="100" [(ngModel)]="Produccionuno.titulo" name="Titulo" required>
                                   </mat-form-field>
                               </div>
+                              <!-- Cambio del imput por un select box del Tipo de Producciones
                               <div class="col-md-4">
                                   <mat-form-field class="example-full-width">
                                     <input matInput placeholder="Tipo de produccion" >
                                   </mat-form-field>
                               </div>
+                              -->
+                              <div class="col-md-4">
+                                  <mat-form-field>
+                                      <mat-label>{{'placeholder.productType' | translate}}</mat-label>
+                                      <mat-select [(ngModel)]="Produccionuno.tipoProduccion" name="Tipo Produccion" required>
+                                          <mat-option *ngFor="let TipoProduccion of Tproducciones" [value]="TipoProduccion">
+                                                  {{TipoProduccion.descripcion}}
+                                          </mat-option>
+                                      </mat-select>
+                                  </mat-form-field>
+                              </div>
+
                           </div>
+
+                          <!-- Los autores se registran por otro formulario
                           <div class="row">
                               <div class="col-md-6">
                                 <mat-form-field class="example-full-width">
@@ -27,20 +43,21 @@
                                 </mat-form-field>
                               </div>
                           </div>
+                          -->
 
                           <div class="row">
                               <div class="col-md-4">
                                   <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="fecha" type="date" [(ngModel)]="Produccionuno.fechaPublicacion"  name="Fecha" required >
+                                      <input matInput placeholder="{{'placeholder.date' | translate}}" type="date" [(ngModel)]="Produccionuno.fechaPublicacion"  name="Fecha" required >
                                   </mat-form-field>
                               </div>
                           </div>
 
                           <div class="row">
                               <div class="col-md-12">
-                                <label>RESUMEN</label>
+                                <label>{{'placeholder.summary' | translate}}</label>
                                    <mat-form-field class="example-full-width">
-                                   <textarea matInput placeholder="Realice una brebe descripcion de la publicacion" minlength="5" maxlength="1000" [(ngModel)]="Produccionuno.resumen" name="descripcion" required>></textarea>
+                                   <textarea matInput placeholder="{{'placeholder.briefDescription' | translate}}" minlength="5" maxlength="1000" [(ngModel)]="Produccionuno.resumen" name="descripcion" required>></textarea>
                                    </mat-form-field>
                                   <!-- <div class="form-group">
                                       <div class="form-group">
@@ -50,16 +67,18 @@
                                   </div> -->
                               </div>
 
+                              <!-- no hay campo palabras clave en producciones
                               <div class="col-md-4">
                                   <mat-form-field class="example-full-width">
                                       <input matInput placeholder="palabras clave">
                                   </mat-form-field>
                               </div>
+                              -->
 
                           </div>
 
                           <button (click)="onClickMe(Produccionuno)" [disabled]="!Produccion.form.valid" button mat-raised-button color="primary">
-                              <mat-icon>send</mat-icon> Enviar</button>  <div class="clearfix"></div>
+                              <mat-icon>send</mat-icon> {{'action.send' | translate}}</button>  <div class="clearfix"></div>
 
 
 
@@ -81,7 +100,7 @@
                       <p class="card-description">
                           Las publicaciones estan protegidas por derecho de autor, todos los derechos reservados.
                       </p>
-                      <a href="javascript:void(0)" class="btn btn-danger btn-round">follow</a>
+                      <a href="javascript:void(0)" class="btn btn-danger btn-round">{{'action.follow' | translate}}</a>
                   </div>
               </div>
           </div>

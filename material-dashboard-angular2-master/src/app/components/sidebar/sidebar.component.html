@@ -1,4 +1,3 @@
-//logo superior izquierdo
 <div class="logo">
     <a href="https://www.udea.edu.co" class="simple-text">
         <div class="logo-img">
@@ -7,14 +6,13 @@
         UDE@
     </a>
 </div>
-//logo superior izquierdo
 
 <div class="sidebar-wrapper">
   <div *ngIf="isMobileMenu()">
     <form class="navbar-form">
       <span class="bmd-form-group">
         <div class="input-group no-border">
-          <input type="text" value="" class="form-control" placeholder="Search...">
+          <input type="text" value="" class="form-control" placeholder="{{'placeholder.search' | translate}}">
           <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
             <i class="material-icons">search</i>
             <div class="ripple-container"></div>
@@ -58,7 +56,7 @@
         <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
             <a class="nav-link" [routerLink]="[menuItem.path]">
                 <i class="material-icons">{{menuItem.icon}}</i>
-                <p>{{menuItem.title}}</p>
+                <p>{{menuItem.title | translate}}</p>
             </a>
         </li>
     </ul>

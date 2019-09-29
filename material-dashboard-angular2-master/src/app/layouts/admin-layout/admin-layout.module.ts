@@ -24,6 +24,7 @@ import {
     MatProgressSpinnerModule,
     MatSelectModule, MatIconModule, MatDatepickerModule, MatExpansionModule
 } from '@angular/material';
+import { TranslateModule } from '@ngx-translate/core';
 import {ClickMeComponent} from "../../agregarproducciones/click-me.component";
 @NgModule({
     imports: [
@@ -42,7 +43,8 @@ import {ClickMeComponent} from "../../agregarproducciones/click-me.component";
         MatProgressSpinnerModule,
         MatIconModule,
         MatDatepickerModule,
-        MatExpansionModule
+        MatExpansionModule,
+        TranslateModule
     ],
 
     declarations: [

@@ -6,6 +6,7 @@ import {MatSort} from '@angular/material/sort';
 import {ProduccionDataSource} from '../ProduccionDataSource';
 import {tap} from 'rxjs/operators';
 import {MessageService} from '../message.service';
+import { TranslateService } from '@ngx-translate/core';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {FormControl} from '@angular/forms';
 
@@ -33,6 +34,7 @@ export class TableListComponent implements AfterViewInit, OnInit {
   constructor(
       private produccionService: ProduccionService,
       private messageService: MessageService,
+      private translate: TranslateService,
       private _snackBar: MatSnackBar) { }
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
