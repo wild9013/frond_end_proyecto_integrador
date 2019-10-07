@@ -22,7 +22,7 @@ import {FormControl} from '@angular/forms';
 export class TableListComponent implements AfterViewInit, OnInit {
 
   produccion: Produccion;
-  public displayedColumns = ['titulo', 'resumen', 'fechaPublicacion', 'tipoProduccion'];
+  public displayedColumns = ['titulo', 'resumen', 'fechaPublicacion', 'tipoProduccion','Action'];
   public dataSource: ProduccionDataSource;
   public sortActive: string;
   public sortDirection: string;
@@ -116,6 +116,12 @@ export class TableListComponent implements AfterViewInit, OnInit {
     this._snackBar.open(message, action, {
       duration: 2000,
     });
+  }
+
+  deleteProduccion(produccionID: number){
+    console.log(produccionID);
+    this.produccionService.deleteProduccion(produccionID)
+      .subscribe(() => this.dataSource.loadProducciones(this.paginator.pageIndex, this.paginator.pageSize, this.sortActive, this.sortDirection, '*'));
   }
 
 }
