@@ -22,6 +22,17 @@ export class ProduccionService {
       private http: HttpClient,
       private messageService: MessageService) { }
 
+
+  deleteProduccion(produccion: Produccion | number): Observable<any>{
+    const id = typeof produccion==='number'?produccion:produccion.produccionID;
+    const url = `${this.apiUrl}/${id}`;
+
+    return this.http.delete(url,httpOptions).pipe( 
+      tap(_ => this.log(`produccion eliminada id=${id}`)),
+      catchError(this.handleError<Produccion>('deleteProduccion'))
+    );
+  }
+
   /** GET producciones from the server */
   getProducciones(pageIndex: number= 0, pageSize: number): Observable<Produccion[]> {
       return this.http.get<Produccion[]>(this.apiUrl + '/produccionesPagina', {
