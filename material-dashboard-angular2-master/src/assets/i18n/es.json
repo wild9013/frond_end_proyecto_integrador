@@ -54,6 +54,7 @@
 
   "action.follow": "Seguir",
   "action.send": "Enviar",
+  "action.update": "Actualizar",
 
   "validation.required": "Debes ingresar un valor",
   "validation.email": "No es un correo valido"

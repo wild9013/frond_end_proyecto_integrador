@@ -12,6 +12,7 @@ import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { AgregarproduccionesComponent } from '../../agregarproducciones/agregarproducciones.component';
+import { EditarproduccionesComponent } from '../../editarproducciones/editarproducciones.component';
 
 import {
     MatButtonModule,
@@ -51,6 +52,7 @@ import {ClickMeComponent} from "../../agregarproducciones/click-me.component";
         DashboardComponent,
         UserProfileComponent,
         AgregarproduccionesComponent,
+        EditarproduccionesComponent,
         TableListComponent,
         TypographyComponent,
         IconsComponent,
