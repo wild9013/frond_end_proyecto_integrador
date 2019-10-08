@@ -9,6 +9,7 @@ import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component'
 import { AgregarproduccionesComponent} from '../../agregarproducciones/agregarproducciones.component';
+import { EditarproduccionesComponent } from 'app/editarproducciones/editarproducciones.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -68,4 +69,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'agregarproducciones',   component: AgregarproduccionesComponent },
+    { path: 'editarproducciones', component: EditarproduccionesComponent}
 ];

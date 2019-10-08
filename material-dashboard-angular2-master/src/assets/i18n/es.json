@@ -12,6 +12,7 @@
   "product.list.table.id": "ID",
   "product.list.table.title": "Titulo",
   "product.list.table.summary": "Resumen",
+  "product.list.table.delete": "Eliminar",
   "product.list.table.publicationDate": "Fecha Publicación",
   "product.add.title": "Editar la lista de producciones",
   "product.add.subTitle": "Agrega la información correspondiente",
@@ -53,6 +54,7 @@
 
   "action.follow": "Seguir",
   "action.send": "Enviar",
+  "action.update": "Actualizar",
 
   "validation.required": "Debes ingresar un valor",
   "validation.email": "No es un correo valido"

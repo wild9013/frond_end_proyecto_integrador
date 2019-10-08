@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit, Output, EventEmitter } from '@angular/core';
 import {Produccion} from '../produccion';
 import {ProduccionService} from '../produccion.service';
 import { MatPaginator, MatTableDataSource } from '@angular/material';
@@ -9,6 +9,7 @@ import {MessageService} from '../message.service';
 import { TranslateService } from '@ngx-translate/core';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {FormControl} from '@angular/forms';
+
 
 @Component({
   selector: 'app-table-list',
@@ -22,13 +23,16 @@ import {FormControl} from '@angular/forms';
 export class TableListComponent implements AfterViewInit, OnInit {
 
   produccion: Produccion;
-  public displayedColumns = ['titulo', 'resumen', 'fechaPublicacion', 'tipoProduccion'];
+  public displayedColumns = ['titulo', 'resumen', 'fechaPublicacion', 'tipoProduccion','Action', 'ActionEditar'];
   public dataSource: ProduccionDataSource;
   public sortActive: string;
   public sortDirection: string;
   public filter: string;
   tituloInput = new FormControl();
   resumenInput = new FormControl();
+  
+  @Output()
+  editarProduccion: EventEmitter<any> = new EventEmitter();
   // tipoSelect = new FormControl();
 
   constructor(
@@ -116,6 +120,16 @@ export class TableListComponent implements AfterViewInit, OnInit {
     this._snackBar.open(message, action, {
       duration: 2000,
     });
+  }
+
+  deleteProduccion(produccionID: number){
+    console.log(produccionID);
+    this.produccionService.deleteProduccion(produccionID)
+      .subscribe(() => this.dataSource.loadProducciones(this.paginator.pageIndex, this.paginator.pageSize, this.sortActive, this.sortDirection, '*'));
+  }
+
+  editarProducciones(produccion: Produccion){
+    this.editarProduccion.emit(produccion);
   }
 
 }
