@@ -48,7 +48,7 @@
                           <div class="row">
                               <div class="col-md-4">
                                   <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="{{'placeholder.date' | translate}}" type="date" [(ngModel)]="Produccionuno.fechaPublicacion"  name="Fecha" required >
+                                      <input matInput placeholder="{{'placeholder.date' | translate}}" type="date" [ngModel]="Produccionuno.fechaPublicacion|date:'yyyy-MM-dd'" (ngModelChange)="Produccionuno.fechaPublicacion=$event" name="Fecha" required >
                                   </mat-form-field>
                               </div>
                           </div>

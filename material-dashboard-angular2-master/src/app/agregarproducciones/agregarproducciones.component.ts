@@ -44,7 +44,15 @@ export class AgregarproduccionesComponent implements OnInit {
 
       console.log(data);
       this.Produccionuno = data;
+      //let newDate = new Date(this.Produccionuno.fechaPublicacion);
+      //this.Produccionuno.fechaPublicacion = this.formatDate(newDate);
       
+    }
+
+    formatDate(iDate: Date){
+      var inputDate = new Date(iDate);
+      var formattedDate = inputDate.getFullYear()+'-'+(inputDate.getMonth() + 1)+'-'+inputDate.getDate();
+      return formattedDate;
     }
 
    /* onSubmit(Produccionuno: NgForm) {
