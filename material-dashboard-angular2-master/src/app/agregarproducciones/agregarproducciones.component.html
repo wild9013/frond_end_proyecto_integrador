@@ -25,8 +25,8 @@
                               <div class="col-md-4">
                                   <mat-form-field>
                                       <mat-label>{{'placeholder.productType' | translate}}</mat-label>
-                                      <mat-select [(ngModel)]="Produccionuno.tipoProduccion" name="Tipo Produccion" required>
-                                          <mat-option *ngFor="let TipoProduccion of Tproducciones" [value]="TipoProduccion">
+                                      <mat-select [(ngModel)]="produccionSeleccionada" name="Tipo Produccion" required>
+                                          <mat-option *ngFor="let TipoProduccion of Tproducciones" [value]="TipoProduccion.tipoProdID">
                                                   {{TipoProduccion.descripcion}}
                                           </mat-option>
                                       </mat-select>

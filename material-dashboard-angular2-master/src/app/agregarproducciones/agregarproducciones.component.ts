@@ -19,6 +19,7 @@ export class AgregarproduccionesComponent implements OnInit {
 
 
   Produccionuno = new Produccion();
+  produccionSeleccionada = 0;
   Tproducciones: TipoProduccion[];
     private emailResponse;
     private truefalse = false;
@@ -36,6 +37,9 @@ export class AgregarproduccionesComponent implements OnInit {
 
     onClickMe(produccion: Produccion) {
       console.log("Im here");
+      console.log(this.Tproducciones)
+      console.log(this.produccionSeleccionada)
+      produccion.tipoProduccion = this.Tproducciones[this.produccionSeleccionada-1]
       
       this.produccionService.addProduccion(produccion);
     }
@@ -44,6 +48,7 @@ export class AgregarproduccionesComponent implements OnInit {
 
       console.log(data);
       this.Produccionuno = data;
+      this.produccionSeleccionada = this.Produccionuno.tipoProduccion.tipoProdID;
       //let newDate = new Date(this.Produccionuno.fechaPublicacion);
       //this.Produccionuno.fechaPublicacion = this.formatDate(newDate);
       
@@ -53,6 +58,10 @@ export class AgregarproduccionesComponent implements OnInit {
       var inputDate = new Date(iDate);
       var formattedDate = inputDate.getFullYear()+'-'+(inputDate.getMonth() + 1)+'-'+inputDate.getDate();
       return formattedDate;
+    }
+
+    changeSelectedOption(){
+
     }
 
    /* onSubmit(Produccionuno: NgForm) {
@@ -79,6 +88,8 @@ export class FormFieldErrorExample {
                 '';
     }
 }
+
+
 
 
 
