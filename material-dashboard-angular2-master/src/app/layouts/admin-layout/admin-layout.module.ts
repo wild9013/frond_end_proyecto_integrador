@@ -13,6 +13,7 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { AgregarproduccionesComponent } from '../../agregarproducciones/agregarproducciones.component';
 import { EditarproduccionesComponent } from '../../editarproducciones/editarproducciones.component';
+import { LoginComponent} from '../../login/login.component';
 
 import {
     MatButtonModule,
@@ -46,6 +47,7 @@ import {ClickMeComponent} from "../../agregarproducciones/click-me.component";
         MatDatepickerModule,
         MatExpansionModule,
         TranslateModule
+
     ],
 
     declarations: [
@@ -60,6 +62,7 @@ import {ClickMeComponent} from "../../agregarproducciones/click-me.component";
         NotificationsComponent,
         UpgradeComponent,
         ClickMeComponent,
+        LoginComponent
     ]
 })
 

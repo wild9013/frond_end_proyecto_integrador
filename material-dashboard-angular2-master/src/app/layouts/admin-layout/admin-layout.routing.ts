@@ -10,6 +10,8 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { UpgradeComponent } from '../../upgrade/upgrade.component'
 import { AgregarproduccionesComponent} from '../../agregarproducciones/agregarproducciones.component';
 import { EditarproduccionesComponent } from 'app/editarproducciones/editarproducciones.component';
+import { LoginComponent } from 'app/login/login.component';
+import {AuthGuard} from '../../security/auth.guard';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -62,12 +64,15 @@ export const AdminLayoutRoutes: Routes = [
     // }
     { path: 'dashboard',      component: DashboardComponent },
     { path: 'user-profile',   component: UserProfileComponent },
-    { path: 'table-list',     component: TableListComponent },
+    { path: 'table-list',     component: TableListComponent, canActivate: [AuthGuard],
+        data: {claimName: 'canAccessProduccion'} },
     { path: 'typography',     component: TypographyComponent },
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
-    { path: 'agregarproducciones',   component: AgregarproduccionesComponent },
-    { path: 'editarproducciones', component: EditarproduccionesComponent}
+    { path: 'login',   component: LoginComponent },
+    { path: 'agregarproducciones',   component: AgregarproduccionesComponent,  },
+    { path: 'editarproducciones', component: EditarproduccionesComponent, canActivate: [AuthGuard],
+        data: {claimName: 'canAddProduccion'}}
 ];

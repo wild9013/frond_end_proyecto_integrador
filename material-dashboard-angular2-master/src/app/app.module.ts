@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
+
 //Translation
 import {
   TranslateLoader,
@@ -43,6 +44,7 @@ import {
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { MessagesComponent } from './messages/messages.component';
 import {BrowserModule} from "@angular/platform-browser";
+
 
 export function createCustomMatPaginatorIntl(
   translateService: TranslateService,
