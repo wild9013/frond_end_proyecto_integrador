@@ -77,8 +77,10 @@
 
                          </div>
 
-                         <button (click)="onClickMe(Produccionuno)" [disabled]="!Produccion.form.valid" button mat-raised-button color="primary">
-                             <mat-icon>send</mat-icon> {{'action.update' | translate}}</button>  <div class="clearfix"></div>
+                         <button (click)="onClickMe(Produccionuno)" [disabled]="!Produccion.form.valid" button mat-raised-button color="primary" *ngIf="securityObject.canSaveProduccion">
+                             <mat-icon>send</mat-icon> {{'action.update' | translate}}</button>  <div class="clearfix">
+
+                     </div>
 
 
 

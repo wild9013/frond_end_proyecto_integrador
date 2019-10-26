@@ -5,12 +5,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
+
+
 const routes: Routes =[
   {
     path: '',
-    redirectTo: 'table-list',
-    pathMatch: 'full',
-  }, {
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
     path: '',
     component: AdminLayoutComponent,
     children: [{
@@ -28,7 +31,6 @@ const routes: Routes =[
        useHash: true
     })
   ],
-  exports: [
-  ],
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
